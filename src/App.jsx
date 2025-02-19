@@ -1,5 +1,9 @@
 import React from "react"
-
+import Navbar from "./pages/Navbar"
 export default function App() {
-  return <div>App</div>
+  return (
+    <div>
+      <Navbar />
+    </div>
+  )
 }
