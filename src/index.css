@@ -23,6 +23,7 @@ border-bottom: 1px solid #ebebeb;
     color: #333;  /* Set text color */
     padding: 10px 15px;  /* Add some padding */
     transition: color 0.3s ease;  /* Smooth transition for color changes */
+    font-size: 20px;
   }
   
   .nav-link:hover {
@@ -49,12 +50,15 @@ border-bottom: 1px solid #ebebeb;
     border-radius: 5px;
     cursor: pointer;
     outline: 0;
-  }
-  .nav-button :hover{
+}
+
+.nav-button:hover {
     background-color: brown;
-    transition: all .5s;
+    transition: all 0.5s;
     color: white;
 }
+
+
 .container{
     max-width: 1000px;
     width: 1000%;

@@ -6,6 +6,7 @@ export default function Navbar() {
       <div className="logo">Varathan</div>
       <div className="navlist">
         <Link to="/" className="nav-link">
+          {/* Link to="" */}
           Home
         </Link>
         <Link to="/products" className="nav-link">
@@ -17,11 +18,10 @@ export default function Navbar() {
         <Link to="/contact" className="nav-link">
           Contact
         </Link>
-        <button>
-          <Link to="/" className="nav-link">
-            Login
-          </Link>
-        </button>
+
+        <Link to="/" className="nav-button">
+          Login
+        </Link>
       </div>
     </div>
   )
