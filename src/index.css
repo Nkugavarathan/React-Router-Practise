@@ -5,9 +5,12 @@
 }
 
 .navbar{
+    margin: 10px 10px;
 display: flex;
 justify-content: space-between;
 align-items: center;
+padding: 15px 8px;
+border-bottom: 1px solid #ebebeb;
 }
 .navbar a{
     margin-right: 5px;
@@ -16,15 +19,16 @@ align-items: center;
 }
 .navbar button{
     border: none;
-    height: 40px;
-    width: 60px;
-    padding: 5px;
+    /* height: 40px;
+    width: 60px; */
+    padding: 12px 25px;
    background: none;
     margin:0 50px 0 5px;
     font-size: 20px;
     background-color: aqua;
    border-radius: 5px;
    cursor: pointer;
+   outline: 0;
 
 }
 .navbar button:hover{
