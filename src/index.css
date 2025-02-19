@@ -12,27 +12,51 @@ align-items: center;
 padding: 15px 8px;
 border-bottom: 1px solid #ebebeb;
 }
-.navbar a{
-    margin-right: 5px;
-    text-decoration: none;
+.logo{
     font-size: 20px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
 }
-.navbar button{
+.nav-link {
+    text-decoration: none;  /* Remove underline */
+    color: #333;  /* Set text color */
+    padding: 10px 15px;  /* Add some padding */
+    transition: color 0.3s ease;  /* Smooth transition for color changes */
+  }
+  
+  .nav-link:hover {
+    color: #007BFF;  /* Change color on hover */
+  }
+  
+  .nav-link:active {
+    color: #0056b3;  /* Change color when clicked */
+  }
+  
+  .nav-link:focus {
+    outline: none;  /* Remove the default focus outline */
+    box-shadow: 0 0 0 2px #007BFF;  /* Add a custom focus outline */
+  }
+  
+  .nav-button {
+    text-decoration: none;
     border: none;
-    /* height: 40px;
-    width: 60px; */
     padding: 12px 25px;
-   background: none;
-    margin:0 50px 0 5px;
+    background: none;
+    margin: 0 5px;
     font-size: 20px;
     background-color: aqua;
-   border-radius: 5px;
-   cursor: pointer;
-   outline: 0;
-
-}
-.navbar button:hover{
+    border-radius: 5px;
+    cursor: pointer;
+    outline: 0;
+  }
+  .nav-button :hover{
     background-color: brown;
     transition: all .5s;
     color: white;
+}
+.container{
+    max-width: 1000px;
+    width: 1000%;
+    margin: 0 auto;
 }
