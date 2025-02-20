@@ -20,7 +20,8 @@ import RootLayout from "./layout/RootLayout"
 
 import UserLayout from "./layout/UserLayout"
 import User, { userLoader } from "./pages/User"
-import Userdetail from "./components/Userdetail"
+import Userdetail, { userSingleLoader } from "./components/Userdetail"
+
 import NotFound from "./pages/NotFound"
 
 export default function App() {
@@ -41,7 +42,12 @@ export default function App() {
 
         <Route path="user" element={<UserLayout />}>
           <Route index element={<User />} loader={userLoader} />
-          <Route path=":id" element={<Userdetail />} />
+          <Route
+            path=":id"
+            element={<Userdetail />}
+            loader={userSingleLoader}
+          />
+          {/* params */}
         </Route>
 
         <Route path="*" element={<NotFound />}></Route>
