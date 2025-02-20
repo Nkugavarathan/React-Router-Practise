@@ -42,7 +42,7 @@ export const userSingleLoader = async ({ params }) => {
 }
 
 /*
-[
+[ 
   {
     "id": 1,
     "name": "Leanne Graham",

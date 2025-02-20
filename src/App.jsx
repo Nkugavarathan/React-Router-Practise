@@ -24,6 +24,8 @@ import Userdetail, { userSingleLoader } from "./components/Userdetail"
 
 import NotFound from "./pages/NotFound"
 
+import Errorpage from "./components/Errorpage"
+
 export default function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
@@ -40,7 +42,11 @@ export default function App() {
         <Route path="about" element={<About />} />
         <Route path="products" element={<Products />} />
 
-        <Route path="user" element={<UserLayout />}>
+        <Route
+          path="user"
+          element={<UserLayout />}
+          errorElement={<Errorpage />}
+        >
           <Route index element={<User />} loader={userLoader} />
           <Route
             path=":id"
