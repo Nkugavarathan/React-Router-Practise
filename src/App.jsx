@@ -7,8 +7,14 @@ import {
 } from "react-router-dom"
 
 import Home from "./pages/Home"
-import Contact from "./pages/Contact"
+
+// import Contact from "./pages/Contact"
+import ContactLayout from "./layout/ContactLayout"
+import Form from "./components/Form"
+import Info from "./components/Info"
+
 import About from "./pages/About"
+
 import Products from "./pages/Products"
 import RootLayout from "./layout/RootLayout"
 
@@ -18,7 +24,11 @@ export default function App() {
       <Route path="/" element={<RootLayout />}>
         <Route index element={<Home />} />
         {/* The 'index' prop specifies this as the default route when the parent route matches exactly. */}
-        <Route path="contact" element={<Contact />} />
+        {/* <Route path="contact" element={<Contact />} /> */}
+        <Route path="contact" element={<ContactLayout />}>
+          <Route path="info" element={<Info />} />
+          <Route path="form" element={<Form />} />
+        </Route>
         <Route path="about" element={<About />} />
         <Route path="products" element={<Products />} />
       </Route>
