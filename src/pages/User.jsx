@@ -1,5 +1,5 @@
 import React from "react"
-import { useLoaderData } from "react-router-dom"
+import { Link, useLoaderData } from "react-router-dom"
 
 export default function User() {
   const userdetail = useLoaderData()
@@ -18,10 +18,12 @@ export default function User() {
   return (
     <div className="container">
       {userdetail.map((user) => (
-        <div key={user.id} className="user">
-          <h3>{user.name}</h3>
-          <p>{user.email}</p>
-        </div>
+        <Link to={user.id.toString()} key={user.id}>
+          <div key={user.id} className="user">
+            <h3>{user.name}</h3>
+            <p>{user.email}</p>
+          </div>
+        </Link>
       ))}
     </div>
   )
