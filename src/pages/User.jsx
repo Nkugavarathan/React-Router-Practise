@@ -18,7 +18,7 @@ export default function User() {
   return (
     <div className="container">
       {userdetail.map((user) => (
-        <div key={user.id}>
+        <div key={user.id} className="user">
           <h3>{user.name}</h3>
           <p>{user.email}</p>
         </div>

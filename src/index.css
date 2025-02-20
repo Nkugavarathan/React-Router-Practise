@@ -64,3 +64,9 @@ border-bottom: 1px solid #ebebeb;
     width: 1000%;
     margin: 0 auto;
 }
+
+.user{
+  margin-bottom: 10px;
+  border-bottom: 2px solid rgb(224, 219, 219);
+  padding: 20px 0;
+}
