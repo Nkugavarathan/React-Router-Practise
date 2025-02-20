@@ -30,10 +30,12 @@ export default function App() {
         <Route index element={<Home />} />
         {/* The 'index' prop specifies this as the default route when the parent route matches exactly. */}
         {/* <Route path="contact" element={<Contact />} /> */}
+
         <Route path="contact" element={<ContactLayout />}>
           <Route path="info" element={<Info />} />
           <Route path="form" element={<Form />} />
         </Route>
+
         <Route path="about" element={<About />} />
         <Route path="products" element={<Products />} />
 
