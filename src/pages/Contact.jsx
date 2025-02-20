@@ -5,7 +5,7 @@ export default function Contact() {
   const navigate = useNavigate()
   return (
     <div className="container">
-      Contact
+      <h1>Contact</h1>
       <button onClick={() => navigate("info")}>Information</button>
       <button onClick={() => navigate("form")}>Form</button>
     </div>

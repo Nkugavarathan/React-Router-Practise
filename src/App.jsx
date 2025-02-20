@@ -17,6 +17,7 @@ import About from "./pages/About"
 
 import Products from "./pages/Products"
 import RootLayout from "./layout/RootLayout"
+import NotFound from "./pages/NotFound"
 
 export default function App() {
   const router = createBrowserRouter(
@@ -31,6 +32,7 @@ export default function App() {
         </Route>
         <Route path="about" element={<About />} />
         <Route path="products" element={<Products />} />
+        <Route path="*" element={<NotFound />}></Route>
       </Route>
     )
   )
