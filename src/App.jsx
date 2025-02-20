@@ -17,6 +17,10 @@ import About from "./pages/About"
 
 import Products from "./pages/Products"
 import RootLayout from "./layout/RootLayout"
+
+import UserLayout from "./layout/UserLayout"
+import User, { userLoader } from "./pages/User"
+
 import NotFound from "./pages/NotFound"
 
 export default function App() {
@@ -32,6 +36,11 @@ export default function App() {
         </Route>
         <Route path="about" element={<About />} />
         <Route path="products" element={<Products />} />
+
+        <Route path="user" element={<UserLayout />}>
+          <Route index element={<User />} loader={userLoader} />
+        </Route>
+
         <Route path="*" element={<NotFound />}></Route>
       </Route>
     )

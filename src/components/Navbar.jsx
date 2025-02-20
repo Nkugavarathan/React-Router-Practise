@@ -32,7 +32,9 @@ export default function Navbar() {
         <Link to="/contact" className="nav-link">
           Contact
         </Link>
-
+        <Link to="/user" className="nav-link">
+          User
+        </Link>
         <Link className="nav-button" onClick={() => navigate("/")}>
           Login
         </Link>
